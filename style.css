@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+    position: relative;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+nav {
+    position:sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    border-bottom: solid gainsboro;
+    background: gainsboro;
+    
+}
+#tm {
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+    margin: 0.5rem;
+    margin-right: auto;
+}
+nav p {
+    margin: 0 1rem;
+    padding-bottom: 0.5rem ;
+    border-bottom: brown 0.2rem hidden;
+}
+nav > p:hover {
+    animation-name: udrln;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    border-color: gainsboro;
+    border-bottom: solid
+}
+@keyframes udrln {
+    to {
+        border-color: gray;
+    }
+}
+#colors {
+    position: sticky;
+    width: 100%;
+    height: 0.4rem;
+    background: url(https://media0.giphy.com/media/dAWZiSMbMvObDWP3aA/200w.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#colors p {
+    opacity: 0;
+}
+#box {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-bottom: 0.35rem;
+    margin-right: 1rem;
+    margin-left: 1rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 0%;
+    overflow: hidden;
+}
+#box:hover p {
+    background: black;
+}
+#box p {
+    font-size: 0.3rem;
+    margin: auto 0;
+    padding: 0;
+    width: 100%;
+}
+#one, #two, #three{
+    background: gray;
+    color: gray;
+    animation-name: none;
+}
+
+main {
+    margin: 1rem;
+    margin-right: 2.5rem;
+    height: 40rem;
+    margin-top: 3rem;
+}
+main p {
+    text-align:justify;
+    font-size: 15rem;
+    text-align: center;
+}
+main h1,h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+main h2 {
+    margin-top: 5rem;
+    color: cornflowerblue;
+}
+img[alt = "back to top"] {
+    width: 100%;
+    height: auto;
+}
+a#top {
+    width: 2rem;
+    position: fixed;
+    bottom: 5.4rem;
+    right: 0;
+}
+#top:hover, #bottom:hover {
+    opacity: 50%;
+
+}
+#bottom {
+    width: 2.5rem;
+    transform: rotate(180deg);
+    position: fixed;
+    top: 5.5rem;
+    right: 0;
+}
+#bottom, #top {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+footer {
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem ;
+    padding-bottom: 1rem;
+
+}
+footer a, img {
+    width: 2rem;
+    height: auto;
+    border-radius: 50%;
+}
+#footer div {
+    margin:0.5rem 0;
+}
+@keyframes hidee {
+    to {
+        opacity: 0%;
+    }
+    
+}
